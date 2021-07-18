@@ -1,0 +1,21 @@
+
+
+
+
+
+<main>
+
+
+	<mat-card>
+	<div class="container">
+		<div class="row row-presence">
+			<div #presenceList class='presence'></div>
+		</div>
+		<div class='row row-editor'>
+			<ckeditor [editor]="Editor" (ready)="onReady($event)" [config]="editorConfig" [data]="data"></ckeditor>
+			<div #sidebar class='sidebar'></div>
+		</div>
+	</div>
+	</mat-card>
+</main>
+
